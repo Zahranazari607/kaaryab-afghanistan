@@ -105,7 +105,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 | :--- | :---: | :---: |
 | **Home Page** | ![Home Light](./public/screenshots/Home%20page-light%20mode.png) | ![Home Dark](./public/screenshots/Home%20page-Dark%20mode.png) |
 | **Opportunities Page** | ![Opportunities Light](./public/screenshots/Opportunities%20page-light%20mode.png) | ![Opportunities Dark](./public/screenshots/Opportunities%20page-Dark%20mode.png) |
-| **Dashboard** | ![Dashboard Light](./public/screenshots/Dashboard%20page-light%20mode.png) | ![Dashboard Dark](./public/screenshots/Dashboard%20page-Dark%20mode.png) |
+| **Dashboard** | ![Dashboard Light](./public/screenshots/Dashboard%20page%20-light%20mode.png) | ![Dashboard Dark](./public/screenshots/Dashboard%20page%20-Dark%20mode.png) |
 | **CV Builder** | ![CV Builder Light](./public/screenshots/CV%20builder%20page-light%20mode.png) | ![CV Builder Dark](./public/screenshots/CV%20builder%20page-Dark%20mode.png) |
 | **Post Opportunity** | ![Post Opportunity Light](./public/screenshots/Post%20opportunities%20page-light%20mode.png) | ![Post Opportunity Dark](./public/screenshots/Post%20opportunities%20page-Dark%20mode.png) |
 | **Saved Opportunities** | ![Saved Light](./public/screenshots/Saved%20page-light%20mode.png) | ![Saved Dark](./public/screenshots/Saved%20page-Dark%20mode.png) |
