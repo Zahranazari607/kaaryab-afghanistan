@@ -156,4 +156,3 @@ Use this structure when presenting or pitching the **KaarYab Afghanistan** proje
 
 ---
   **Built with 🩷 for the bright future of Afghan youth.**
-](https://github.com/Zahranazari607/kaaryab-afghanistan)
