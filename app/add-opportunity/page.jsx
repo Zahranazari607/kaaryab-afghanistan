@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -25,7 +26,7 @@ const opportunitySchema = z.object({
   tags: z.string().optional(),
 });
 
-export default function AddOpportunityPage() {
+function AddOpportunityContent() {
   const { allOpportunities, addOpportunity, updateOpportunity } = useSaved() || { allOpportunities: [] };
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -257,5 +258,13 @@ export default function AddOpportunityPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function AddOpportunityPage() {
+  return (
+    <Suspense fallback={<div className="p-6 text-center text-slate-500">Loading form...</div>}>
+      <AddOpportunityContent />
+    </Suspense>
   );
 }
