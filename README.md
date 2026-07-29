@@ -1,4 +1,4 @@
-[# 🎓 KaarYab Afghanistan
+# 🎓 KaarYab Afghanistan
 
 > **Opportunity Finder Platform for Afghan Youth**  
 > A modern, accessible, and user-centric web platform designed to empower Afghan students, job seekers, and professionals by aggregating career and educational opportunities in one unified place.
