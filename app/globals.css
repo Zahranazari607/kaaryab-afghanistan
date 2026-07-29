@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* 👈 اضافه کردن این خط برای فعال‌سازی دارک مود بر اساس کلاس در Tailwind v4 حیاتی است */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
