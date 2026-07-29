@@ -122,7 +122,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## 💻 GitHub Link
 
-* **GitHub Repository:** https://github.com/Zahranazari607/kaaryab-afghanistan.git
+* **GitHub Repository:** [https://github.com/Zahranazari607/kaaryab-afghanistan.git](https://github.com/Zahranazari607/kaaryab-afghanistan.git)
 
 ---
 
