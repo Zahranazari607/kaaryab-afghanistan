@@ -116,7 +116,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## 🔗 Live Demo Link
 
-* **Live Demo:** [https://kaaryab-afghanistan.vercel.app](https://kaaryab-afghanistan.vercel.app)
+* **Live Demo:** [https://kaaryab-afghanistan-dqmb.vercel.app](https://kaaryab-afghanistan-dqmb.vercel.app)
 
 ---
 
