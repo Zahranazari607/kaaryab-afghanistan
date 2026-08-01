@@ -1,4 +1,3 @@
-// context/SavedContext.jsx
 "use client";
 import { createContext, useContext, useState, useEffect } from "react";
 import { opportunities as initialOpportunities } from "../data/opportunities";
