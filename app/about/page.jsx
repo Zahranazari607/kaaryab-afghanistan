@@ -1,4 +1,3 @@
-// app/about/page.jsx
 import { Info, Target, Heart, ShieldCheck } from "lucide-react";
 
 export default function AboutPage() {
