@@ -1,4 +1,3 @@
-// components/OpportunityCard.jsx
 "use client";
 import Link from "next/link";
 import { useSaved } from "@/context/SavedContext";
