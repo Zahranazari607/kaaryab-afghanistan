@@ -1,16 +1,14 @@
-// app/page.js
-"use client"; // تغییر به کلاینت کامپوننت برای دسترسی به کانتکست زنده
+"use client"; 
 
 import Link from "next/link";
 import { Briefcase, GraduationCap, Award, Globe, ArrowRight } from "lucide-react";
-import { useSaved } from "../context/SavedContext"; // وارد کردن کانتکست ذخیره
-import { useTheme } from "../context/ThemeContext"; // 👈 وارد کردن کانتکست تم برای اعمال تغییرات زنده
+import { useSaved } from "../context/SavedContext";
+import { useTheme } from "../context/ThemeContext";
 
 export default function HomePage() {
   const { allOpportunities } = useSaved() || { allOpportunities: [] };
-  const { darkMode } = useTheme(); // در صورت نیاز به استفاده مستقیم در منطق کد
-
-  // محاسبه پویای تعداد بر اساس دیتای واقعی کانتکست
+  const { darkMode } = useTheme(); 
+  
   const getCount = (type, value) => {
     if (!allOpportunities) return 0;
     return allOpportunities.filter(op => {
@@ -55,7 +53,6 @@ export default function HomePage() {
     <div className="space-y-16 py-4 relative z-10 transition-colors duration-200">
       {/* Hero Section */}
       <section className="text-center max-w-3xl mx-auto space-y-6 pt-8">
-        {/* تغییر رنگ عنوان به سفید در حالت دارک */}
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 leading-tight">
           Find Your Next <span className="bg-gradient-to-r from-purple-600 to-pink-500 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">Opportunity</span> In Afghanistan
         </h1>
@@ -101,7 +98,6 @@ export default function HomePage() {
                 <h3 className="font-semibold text-slate-800 dark:text-slate-200 text-sm md:text-base transition-colors duration-300 group-hover:text-purple-600 dark:group-hover:text-purple-400">
                   {cat.name}
                 </h3>
-                {/* نمایش پویای تعداد واقعی موجود با هندل کردن دارک مود */}
                 <span className="text-xs font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 px-2.5 py-1 rounded-full transition-colors duration-300 group-hover:bg-purple-50 dark:group-hover:bg-purple-950/60 group-hover:text-purple-700 dark:group-hover:text-purple-300">
                   {cat.count} Available
                 </span>
