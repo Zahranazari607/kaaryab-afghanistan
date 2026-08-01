@@ -1,4 +1,3 @@
-// data/opportunities.js
 export const opportunities = [
   {
     id: "1",
