@@ -6,7 +6,6 @@ export default function Footer() {
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           
-          {/* متن کپی‌رایت و اهداف پلتفرم */}
           <div className="text-sm font-medium text-slate-600 dark:text-slate-400 text-center md:text-left space-y-1">
             <p>© {new Date().getFullYear()} KaarYab Afghanistan. All rights reserved.</p>
             <p className="text-xs text-slate-400 dark:text-slate-500">
@@ -14,7 +13,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* شبکه‌های اجتماعی متصل شده */}
           <div className="flex items-center gap-5 flex-wrap justify-center text-slate-400 dark:text-slate-500">
             
             {/* Twitter (X) */}
@@ -60,7 +58,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* خط پایانی و امضا شخصی شما */}
         <div className="text-center border-t border-slate-200/60 dark:border-slate-900 pt-4">
           <p className="text-slate-400 dark:text-slate-500 text-xs font-medium">
             Created with ❤️ for Afghan Youth. By <span className="text-purple-600 dark:text-pink-400 font-bold">ZN</span>
