@@ -36,8 +36,10 @@ export default function OpportunitiesPage() {
         <p className="text-sm text-slate-500 dark:text-slate-400">Search and filter through jobs, scholarships, and training options.</p>
       </div>
 
+      {/* کادر اصلی فیلترها و سرچ */}
       <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-4 shadow-sm space-y-4 md:space-y-0 md:flex md:items-center md:space-x-4">
 
+        {/* کادر سرچ متنی */}
         <div className="relative flex-grow">
           <Search className="absolute left-4 top-3.5 text-slate-400 dark:text-slate-500 w-5 h-5" />
           <input
@@ -45,34 +47,36 @@ export default function OpportunitiesPage() {
             placeholder="Search by title, keyword, or organization..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl pl-12 pr-4 py-3 text-sm focus:outline-none focus:border-purple-500 transition-colors"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 rounded-xl pl-12 pr-4 py-3 text-sm focus:outline-none focus:border-purple-500 dark:focus:border-purple-400 transition-colors"
           />
         </div>
 
+        {/* دراپ‌داون دسته‌بندی */}
         <div className="flex items-center space-x-2 min-w-[180px]">
           <Folder className="w-4 h-4 text-slate-400 dark:text-slate-500 hidden md:block" />
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-3 text-sm text-slate-700 dark:text-slate-200 focus:outline-none focus:border-purple-500 transition-colors"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-3 text-sm text-slate-900 dark:text-slate-100 focus:outline-none focus:border-purple-500 dark:focus:border-purple-400 transition-colors"
           >
             {categories.map((cat) => (
-              <option key={cat} value={cat} className="dark:bg-slate-950">
+              <option key={cat} value={cat} className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
                 {cat === "All" ? "All Categories" : cat}
               </option>
             ))}
           </select>
         </div>
 
+        {/* دراپ‌داون نوع کار */}
         <div className="flex items-center space-x-2 min-w-[150px]">
           <Globe className="w-4 h-4 text-slate-400 dark:text-slate-500 hidden md:block" />
           <select
             value={type}
             onChange={(e) => setType(e.target.value)}
-            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-3 text-sm text-slate-700 dark:text-slate-200 focus:outline-none focus:border-purple-500 transition-colors"
+            className="w-full bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-3 py-3 text-sm text-slate-900 dark:text-slate-100 focus:outline-none focus:border-purple-500 dark:focus:border-purple-400 transition-colors"
           >
             {types.map((t) => (
-              <option key={t} value={t} className="dark:bg-slate-950">
+              <option key={t} value={t} className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
                 {t === "All" ? "All Types" : t}
               </option>
             ))}
@@ -87,7 +91,7 @@ export default function OpportunitiesPage() {
           ))}
         </div>
       ) : (
-        /* Empty State */
+        /* وضعیت خالی بودن نتیجه */
         <div className="text-center py-16 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm space-y-3">
           <SlidersHorizontal className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto" />
           <h3 className="text-lg font-semibold text-slate-700 dark:text-slate-200">No Opportunities Found</h3>
