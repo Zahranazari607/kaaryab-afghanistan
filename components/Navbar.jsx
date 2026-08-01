@@ -12,7 +12,6 @@ export default function Navbar() {
   const { darkMode, toggleDarkMode } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
-  // اصلاح آیکون‌ها برای جلوگیری از تکرار آیکون Briefcase + اضافه شدن گزینه رزومه‌ساز
   const navLinks = [
     { href: "/", label: "Home", icon: Home },
     { href: "/opportunities", label: "Opportunities", icon: Briefcase },
